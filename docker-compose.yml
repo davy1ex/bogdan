@@ -1,8 +1,9 @@
 version: '3.1'
 services:
   web:
-    build: .
-    dockerfile: "./docker/node/Dockerfile"
+    build: 
+      context: .
+      dockerfile: "./docker/node/Dockerfile"
     ports:
       - "80:80"
     volumes:
